@@ -98,20 +98,20 @@
 
 
 
-  <meta name="description" content="######1. 如何生成测试结果报告？终端执行命令：./jmeter -n -t 要执行的脚本地址.jmx -l 存放jtl结果的地址.jtl -e -o 存放结果报告的文件夹地址 在存放报告的文件夹中index.html就是可视化测试报告。">
+  <meta name="description" content="1. 如何生成测试结果报告？终端执行命令：./jmeter -n -t 要执行的脚本地址.jmx -l 存放jtl结果的地址.jtl -e -o 存放结果报告的文件夹地址 在存放报告的文件夹中index.html就是可视化测试报告。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Jmeter踩坑：自动化生成测试结果报告">
 <meta property="og:url" content="http://yoursite.com/2019/03/11/Jmeter踩坑：自动化生成测试结果报告/index.html">
 <meta property="og:site_name" content="DayBreak - Blog">
-<meta property="og:description" content="######1. 如何生成测试结果报告？终端执行命令：./jmeter -n -t 要执行的脚本地址.jmx -l 存放jtl结果的地址.jtl -e -o 存放结果报告的文件夹地址 在存放报告的文件夹中index.html就是可视化测试报告。">
+<meta property="og:description" content="1. 如何生成测试结果报告？终端执行命令：./jmeter -n -t 要执行的脚本地址.jmx -l 存放jtl结果的地址.jtl -e -o 存放结果报告的文件夹地址 在存放报告的文件夹中index.html就是可视化测试报告。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-36aef0360e1299b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-c293e95b4f43f370.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-e5d34e1f6aa4ae69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-03-11T15:30:20.840Z">
+<meta property="og:updated_time" content="2019-03-11T15:36:29.926Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jmeter踩坑：自动化生成测试结果报告">
-<meta name="twitter:description" content="######1. 如何生成测试结果报告？终端执行命令：./jmeter -n -t 要执行的脚本地址.jmx -l 存放jtl结果的地址.jtl -e -o 存放结果报告的文件夹地址 在存放报告的文件夹中index.html就是可视化测试报告。">
+<meta name="twitter:description" content="1. 如何生成测试结果报告？终端执行命令：./jmeter -n -t 要执行的脚本地址.jmx -l 存放jtl结果的地址.jtl -e -o 存放结果报告的文件夹地址 在存放报告的文件夹中index.html就是可视化测试报告。">
 <meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/12041448-36aef0360e1299b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
@@ -400,7 +400,7 @@
                 
               
 
-              <time title="创建时间：2019-03-11 23:59:17 / 修改时间：23:30:20" itemprop="dateCreated datePublished" datetime="2019-03-11T23:59:17+08:00">2019-03-11</time>
+              <time title="创建时间：2019-03-11 23:59:17 / 修改时间：23:36:29" itemprop="dateCreated datePublished" datetime="2019-03-11T23:59:17+08:00">2019-03-11</time>
             
 
             
@@ -457,10 +457,10 @@
       
 
       
-        <p>######1. 如何生成测试结果报告？<br>终端执行命令：<br>./jmeter -n -t <strong>要执行的脚本地址.jmx</strong> -l <strong>存放jtl结果的地址.jtl</strong> -e -o <strong>存放结果报告的文件夹地址</strong></p>
+        <p><strong>1. 如何生成测试结果报告？</strong><br>终端执行命令：<br>./jmeter -n -t <strong>要执行的脚本地址.jmx</strong> -l <strong>存放jtl结果的地址.jtl</strong> -e -o <strong>存放结果报告的文件夹地址</strong></p>
 <p>在存放报告的文件夹中index.html就是可视化测试报告。<br><a id="more"></a><br><img src="https://upload-images.jianshu.io/upload_images/12041448-36aef0360e1299b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>报告如下：<br><img src="https://upload-images.jianshu.io/upload_images/12041448-c293e95b4f43f370.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
 <p>踩坑:<br>该命令要在jmeter的bin目录下执行<br>很多教程都写的是jmeter -n -t开头，实际是./jmeter<br>每次新的测试计划执行都要把之前的结果报告删除，否则新的测试报告不能读入</p>
-<p>######2. 如何自动化进行？<br>每次都要手动删掉之前的报告，再手动命令，麻烦，自动化脚本走一个。<br>建一个批处理文件，代码如下：（我用的mac，.sh文件，win是.bat，命令可能有差异，但原理就是酱紫）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line">#删除result.jtl</span><br><span class="line">rm -f /Users/xxx/Documents/software/apache-jmeter-4.0/bin/result.jtl</span><br><span class="line"></span><br><span class="line">#删除ResultReport文件夹</span><br><span class="line">rm -rf ResultReport/</span><br><span class="line"></span><br><span class="line">#新建ResultReport文件夹</span><br><span class="line">mkdir ResultReport</span><br><span class="line"></span><br><span class="line">#执行测试计划</span><br><span class="line">./jmeter -n -t /Users/xxx/Documents/Quality/interface_testing/interface.jmx -l /Users/xxx/Documents/software/apache-jmeter-4.0/bin/result.jtl -e -o /Users/xxx/Documents/software/apache-jmeter-4.0/bin/ResultReport</span><br></pre></td></tr></table></figure></p>
+<p><strong>2. 如何自动化进行？</strong><br>每次都要手动删掉之前的报告，再手动命令，麻烦，自动化脚本走一个。<br>建一个批处理文件，代码如下：（我用的mac，.sh文件，win是.bat，命令可能有差异，但原理就是酱紫）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line">#删除result.jtl</span><br><span class="line">rm -f /Users/xxx/Documents/software/apache-jmeter-4.0/bin/result.jtl</span><br><span class="line"></span><br><span class="line">#删除ResultReport文件夹</span><br><span class="line">rm -rf ResultReport/</span><br><span class="line"></span><br><span class="line">#新建ResultReport文件夹</span><br><span class="line">mkdir ResultReport</span><br><span class="line"></span><br><span class="line">#执行测试计划</span><br><span class="line">./jmeter -n -t /Users/xxx/Documents/Quality/interface_testing/interface.jmx -l /Users/xxx/Documents/software/apache-jmeter-4.0/bin/result.jtl -e -o /Users/xxx/Documents/software/apache-jmeter-4.0/bin/ResultReport</span><br></pre></td></tr></table></figure></p>
 <p>放在bin目录下：</p>
 <p><img src="https://upload-images.jianshu.io/upload_images/12041448-e5d34e1f6aa4ae69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
 <p>需要执行时，终端在bin目录下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./jmeter_auto.sh</span><br></pre></td></tr></table></figure></p>
