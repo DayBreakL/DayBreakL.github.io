@@ -106,6 +106,7 @@
 
 
   <meta name="description" content="最近测试的注册、登录接口，密码通过SHA256加密，诸如以前的MD5加密可以直接使用Jmeter函数助手进行加密，SHA256加密没有现成的函数。 在网上搜索了大半天，基本两个路线，一个是通过Beanshell脚本，一个是对Jmeter进行二次开发，自行添加函数，之后使用函数助手进行调用。">
+<meta name="keywords" content="Jmeter">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Jmeter踩坑：导入源码二次开发，函数助手添加自定义函数-SHA256加密">
 <meta property="og:url" content="http://yoursite.com/2019/03/19/Jmeter踩坑：导入源码二次开发，函数助手添加自定义函数-SHA256加密/index.html">
@@ -143,7 +144,7 @@
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-76187bfefb106abe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-f5d2b8fd977605dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-8ad3431d221e41b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-03-19T14:07:07.678Z">
+<meta property="og:updated_time" content="2019-03-25T14:11:31.842Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jmeter踩坑：导入源码二次开发，函数助手添加自定义函数-SHA256加密">
 <meta name="twitter:description" content="最近测试的注册、登录接口，密码通过SHA256加密，诸如以前的MD5加密可以直接使用Jmeter函数助手进行加密，SHA256加密没有现成的函数。 在网上搜索了大半天，基本两个路线，一个是通过Beanshell脚本，一个是对Jmeter进行二次开发，自行添加函数，之后使用函数助手进行调用。">
@@ -278,6 +279,23 @@
     
 
     <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
 
   </li>
         
@@ -435,12 +453,24 @@
                 
               
 
-              <time title="创建时间：2019-03-19 21:59:24 / 修改时间：22:07:07" itemprop="dateCreated datePublished" datetime="2019-03-19T21:59:24+08:00">2019-03-19</time>
+              <time title="创建时间：2019-03-19 21:59:24" itemprop="dateCreated datePublished" datetime="2019-03-19T21:59:24+08:00">2019-03-19</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-25 22:11:31" itemprop="dateModified" datetime="2019-03-25T22:11:31+08:00">2019-03-25</time>
               
             
           </span>
@@ -457,7 +487,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Jmeter/" itemprop="url" rel="index"><span itemprop="name">Jmeter</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/接口测试/" itemprop="url" rel="index"><span itemprop="name">接口测试</span></a></span>
 
                 
                 
@@ -533,6 +563,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Jmeter/" rel="tag"># Jmeter</a>
+          
+        </div>
+      
 
       
       
@@ -551,6 +587,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/25/rest-assured接口测试入门-part1/" rel="prev" title="rest-assured接口测试入门-part1">
+                rest-assured接口测试入门-part1 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -610,7 +650,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -635,6 +675,25 @@
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
             </nav>
           
@@ -713,7 +772,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共2k字</span>
+  <span class="post-count">博客全站共2.8k字</span>
 </div>
         
 

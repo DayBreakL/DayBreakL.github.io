@@ -105,23 +105,39 @@
 
 
 
-  <meta name="description" content="软件测试/摄影渣">
-<meta property="og:type" content="website">
-<meta property="og:title" content="DayBreak - Blog">
-<meta property="og:url" content="http://yoursite.com/categories/Jmeter/index.html">
+  <meta name="description" content="一、rest-assured介绍rest-assured是github上一个开源项目。地址：https://github.com/rest-assured/rest-assured作者言：  Testing and validation of REST services in Java is harder than in dynamic languages such as Ruby and Gro">
+<meta name="keywords" content="rest-assured">
+<meta property="og:type" content="article">
+<meta property="og:title" content="rest-assured接口测试入门-part1">
+<meta property="og:url" content="http://yoursite.com/2019/03/25/rest-assured接口测试入门-part1/index.html">
 <meta property="og:site_name" content="DayBreak - Blog">
-<meta property="og:description" content="软件测试/摄影渣">
+<meta property="og:description" content="一、rest-assured介绍rest-assured是github上一个开源项目。地址：https://github.com/rest-assured/rest-assured作者言：  Testing and validation of REST services in Java is harder than in dynamic languages such as Ruby and Gro">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-08776a56803b9766.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-8be4521e470cb819.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-050def7350b7f3c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-72f06b2ff4d9201e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-9a04a5ce3f9e74f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-2f2004931e16a52c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-9d83dc0b3e81711a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-73db252ee5cc304c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-6840ae452cec333f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-8d91d8322ca527da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-b7d114885c6638d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-9b7103f56a1043f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12041448-daf69309b40ea233.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-03-25T14:51:04.508Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DayBreak - Blog">
-<meta name="twitter:description" content="软件测试/摄影渣">
+<meta name="twitter:title" content="rest-assured接口测试入门-part1">
+<meta name="twitter:description" content="一、rest-assured介绍rest-assured是github上一个开源项目。地址：https://github.com/rest-assured/rest-assured作者言：  Testing and validation of REST services in Java is harder than in dynamic languages such as Ruby and Gro">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/12041448-08776a56803b9766.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/Jmeter/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/25/rest-assured接口测试入门-part1/">
 
 
 
@@ -131,7 +147,7 @@
   };
 </script>
 
-  <title>分类: Jmeter | DayBreak - Blog</title>
+  <title>rest-assured接口测试入门-part1 | DayBreak - Blog</title>
   
 
 
@@ -179,7 +195,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -234,7 +250,7 @@
         
         
           
-          <li class="menu-item menu-item-categories menu-item-active">
+          <li class="menu-item menu-item-categories">
 
     
     
@@ -245,6 +261,23 @@
     
 
     <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
 
   </li>
         
@@ -339,158 +372,236 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block category">
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Jmeter<small>分类</small>
-        </h1>
-      </div>
-
-      
-        
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/25/rest-assured接口测试入门-part1/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DayBreak">
+      <meta itemprop="description" content="软件测试/摄影渣">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DayBreak - Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/2019/03/19/Jmeter踩坑：导入源码二次开发，函数助手添加自定义函数-SHA256加密/" itemprop="url">
-            
-              <span itemprop="name">Jmeter踩坑：导入源码二次开发，函数助手添加自定义函数-SHA256加密</span>
-            
-          </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">rest-assured接口测试入门-part1
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-19T21:59:24+08:00" content="2019-03-19">
-          03-19
-        </time>
-      </div>
+              
+            
+          </h1>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+          <span class="post-time">
 
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-25 22:41:51 / 修改时间：22:51:04" itemprop="dateCreated datePublished" datetime="2019-03-25T22:41:51+08:00">2019-03-25</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/接口测试/" itemprop="url" rel="index"><span itemprop="name">接口测试</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/03/12/Jmeter踩坑：响应内容为空、CSV Data Set Config 入参乱码/" itemprop="url">
-            
-              <span itemprop="name">Jmeter踩坑：响应内容为空/CSV Data Set Config 入参乱码</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-12T19:31:17+08:00" content="2019-03-12">
-          03-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/03/11/Jmeter踩坑：自动化生成测试结果报告/" itemprop="url">
-            
-              <span itemprop="name">Jmeter踩坑：自动化生成测试结果报告</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-11T23:59:17+08:00" content="2019-03-11">
-          03-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/03/10/Jmeter踩坑：Beanshell断言判断响应是否为JSON格式/" itemprop="url">
-            
-              <span itemprop="name">Jmeter踩坑：Beanshell断言判断响应是否为JSON格式</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-10T18:06:17+08:00" content="2019-03-10">
-          03-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <p>一、rest-assured介绍<br>rest-assured是github上一个开源项目。<br>地址：<a href="https://github.com/rest-assured/rest-assured" target="_blank" rel="noopener">https://github.com/rest-assured/rest-assured</a><br>作者言：</p>
+<blockquote>
+<p>Testing and validation of REST services in Java is harder than in dynamic languages such as Ruby and Groovy. REST Assured brings the simplicity of using these languages into the Java domain.</p>
+</blockquote>
+<p>优点：<br>简约的接口测试DSL<br>支持xml json的结构化解析<br>支持xpath jsonpath gpath等多种解析方式<br>对spring的支持比较全面</p>
+<p>二、restassured接口测试步骤</p>
+<ol>
+<li>IDEA创建maven项目</li>
+<li>添加依赖 restassured junit</li>
+<li>编写用例</li>
+<li>添加断言</li>
+<li>调试</li>
+</ol>
+<p>三、demo演练<br>在IDEA中新建一个maven项目，then……</p>
+<ol>
+<li><p>pom.xml文件中添加依赖：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">       &lt;dependency&gt;</span><br><span class="line">           &lt;groupId&gt;io.rest-assured&lt;/groupId&gt;</span><br><span class="line">           &lt;artifactId&gt;rest-assured&lt;/artifactId&gt;</span><br><span class="line">           &lt;version&gt;3.3.0&lt;/version&gt;</span><br><span class="line">           &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">       &lt;/dependency&gt;</span><br><span class="line">       &lt;dependency&gt;</span><br><span class="line">           &lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line">           &lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line">           &lt;version&gt;4.12&lt;/version&gt;</span><br><span class="line">           &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">       &lt;/dependency&gt;</span><br><span class="line">   &lt;/dependencies&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>src/test/java下new一个RestDemo.class<br>开源wiki中说需要Static imports一下几个包。即静态导入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import static io.restassured.RestAssured.given;</span><br><span class="line">import static io.restassured.matcher.RestAssuredMatchers.*;</span><br><span class="line">import static org.hamcrest.Matchers.*;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>最简单的代码：表示发送一个get请求，url是<a href="http://www.baidu.com" target="_blank" rel="noopener">http://www.baidu.com</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public class RestDemo &#123;</span><br><span class="line">    @Test</span><br><span class="line">    public void testGetHtml()&#123;</span><br><span class="line">	//then()是断言，statusCode(200)是响应状态码等于200。</span><br><span class="line">        given().get(&quot;http://www.baidu.com&quot;).then().statusCode(200);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打印log</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public class RestDemo &#123;</span><br><span class="line">    @Test</span><br><span class="line">    public void testGetHtml()&#123;</span><br><span class="line">        given().log().all().get(&quot;http://www.baidu.com&quot;).then().log().all().statusCode(200);</span><br><span class="line">    &#125;</span><br><span class="line">	//log().all()：打印所有log，可以查看有请求和响应的信息</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><img src="https://upload-images.jianshu.io/upload_images/12041448-08776a56803b9766.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br><img src="https://upload-images.jianshu.io/upload_images/12041448-8be4521e470cb819.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<p>可以使用这样的格式写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//百度搜索Mp3</span><br><span class="line">@Test</span><br><span class="line">    public void testMp3()&#123;</span><br><span class="line">        given()</span><br><span class="line">                .get(&quot;http://www.baidu.com/s?wd=mp3&quot;)</span><br><span class="line">                .then().log().all().statusCode(200);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<ol start="5">
+<li>restassured最期望的格式：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">    @Test</span><br><span class="line">    public void testMp3()&#123;</span><br><span class="line">        given()</span><br><span class="line">                .queryParam(&quot;wd&quot;,&quot;mp3&quot;)</span><br><span class="line">        .when()</span><br><span class="line">                .get(&quot;http://www.baidu.com/s&quot;)</span><br><span class="line">        .then()</span><br><span class="line">                .log().all()</span><br><span class="line">                .statusCode(200);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><code>given()</code>：一次网络请求所需要的条件都写在这里，头信息、query参数<br><code>when()</code>：触发条件<br><code>then()</code>：断言</p>
+<ol start="6">
+<li>demo演练：<br>（1）抓取真实接口，以xueqiu.com搜索接口为例<br><img src="https://upload-images.jianshu.io/upload_images/12041448-050def7350b7f3c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br><img src="https://upload-images.jianshu.io/upload_images/12041448-72f06b2ff4d9201e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>（2）new一个Xueqiu.class文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public class Xueqiu &#123;</span><br><span class="line">  @Test</span><br><span class="line">  public void testSearch() &#123;</span><br><span class="line">    given()</span><br><span class="line">            .queryParam(&quot;code&quot;, &quot;sogo&quot;)</span><br><span class="line">    .when()</span><br><span class="line">            .get(&quot;https://xueqiu.com/stock/search.json&quot;)</span><br><span class="line">    .then()</span><br><span class="line">            .log().all()</span><br><span class="line">            .statusCode(200);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>（3）run一下，提示错误：<br><img src="https://upload-images.jianshu.io/upload_images/12041448-9a04a5ce3f9e74f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>（4）打印log,查找错误：<br><img src="https://upload-images.jianshu.io/upload_images/12041448-2f2004931e16a52c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>通过与f12抓的包对比，发现Cookie没有值：<br><img src="https://upload-images.jianshu.io/upload_images/12041448-9d83dc0b3e81711a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>复制抓到的Cookie值<br><img src="https://upload-images.jianshu.io/upload_images/12041448-73db252ee5cc304c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br><img src="https://upload-images.jianshu.io/upload_images/12041448-6840ae452cec333f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>现在请求可以正常发送，也有结果返回了，根据结果修改我们的断言。<br><img src="https://upload-images.jianshu.io/upload_images/12041448-8d91d8322ca527da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>（5）调整断言：断言stocks下面的name值为搜狗：<br><code>.body(&quot;stocks.name&quot;,hasItems(&quot;搜狗&quot;));</code><br><img src="https://upload-images.jianshu.io/upload_images/12041448-b7d114885c6638d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br><code>stocks.name</code>：<code>根节点.子节点</code><br><code>.body()</code> 可以无限的写下去<br><img src="https://upload-images.jianshu.io/upload_images/12041448-9b7103f56a1043f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>当实际结果不符合断言会怎样呢？<br>假如我们把断言改成“sogo”，让其实际结果不符合预期<br><code>.body(&quot;stocks.code&quot;,hasItems(&quot;sogo&quot;))</code><br><img src="https://upload-images.jianshu.io/upload_images/12041448-daf69309b40ea233.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<p>7.demo演练代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">import org.junit.Test;</span><br><span class="line">import static io.restassured.RestAssured.given;</span><br><span class="line">import static org.hamcrest.Matchers.hasItems;</span><br><span class="line"></span><br><span class="line">public class Xueqiu &#123;</span><br><span class="line">  @Test</span><br><span class="line">  public void testSearch() &#123;</span><br><span class="line">    //given开头表示输入数据</span><br><span class="line">    given().log().all()</span><br><span class="line">            //query请求参数</span><br><span class="line">            .queryParam(&quot;code&quot;, &quot;sogo&quot;)</span><br><span class="line">            //头信息</span><br><span class="line">            .header(&quot;Cookie&quot;,&quot;_ga=GA1.2.506579530.1552574503; device_id=0158c91c7ecd8e4d248a54002af6d8ae; aliyungf_tc=AQAAAIatGzFrQgoAJGDMeOsikkxtPFqv; xq_a_token=682c39a460645dafb1ff41f67e0efccba8b0f118; xq_a_token.sig=Bg9acTC-woVSsS6DZvdAtd40CQU; xq_r_token=798a7cab8cd606f61a09fbac15374f1172b00607; xq_r_token.sig=sHSWFNmu_GqEUOK9A-6umfNgFcU; _gid=GA1.2.841306833.1553178554; Hm_lvt_1db88642e346389874251b5a1eded6e3=1552574504,1552736056,1553178554; u=881553178554746; _gat=1; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1553180196&quot;)</span><br><span class="line">    //when表示触发条件</span><br><span class="line">     .when()</span><br><span class="line">            .get(&quot;https://xueqiu.com/stock/search.json&quot;)</span><br><span class="line">     //then对结果断言</span><br><span class="line">    .then()</span><br><span class="line">            //打印log</span><br><span class="line">            .log().all()</span><br><span class="line">            //断言状态码</span><br><span class="line">            .statusCode(200)</span><br><span class="line">            //字段断言</span><br><span class="line">            .body(&quot;stocks.name&quot;,hasItems(&quot;搜狗&quot;))</span><br><span class="line">            .body(&quot;stocks.code&quot;,hasItems(&quot;sogo&quot;));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/rest-assured/" rel="tag"># rest-assured</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/19/Jmeter踩坑：导入源码二次开发，函数助手添加自定义函数-SHA256加密/" rel="next" title="Jmeter踩坑：导入源码二次开发，函数助手添加自定义函数-SHA256加密">
+                <i class="fa fa-chevron-left"></i> Jmeter踩坑：导入源码二次开发，函数助手添加自定义函数-SHA256加密
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -526,7 +637,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -551,6 +662,25 @@
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
             </nav>
           
@@ -629,7 +759,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共2k字</span>
+  <span class="post-count">博客全站共2.8k字</span>
 </div>
         
 
@@ -728,6 +858,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
 
   
 
@@ -743,6 +877,8 @@
 
   
 
+
+  
 
 
   
